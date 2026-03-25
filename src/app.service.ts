@@ -1,17 +1,21 @@
 import { Injectable } from '@nestjs/common';
 
+
+
+
 @Injectable()
 export class AppService {
-  private readonly data = [
-    {
-      success: true,
-      data: {
-        service: 'purchase-api',
-        version: '1.0.0',
-      },
-    },
-  ];
   getHello(): string {
-    return 'Hello NestJS';
+    throw new Error('Method not implemented.');
   }
-}
+  private readonly Data = {
+    "success": true,
+  "data": {
+    "service": "purchase-api",
+    "version": "1.0.0"
+  },
+  "message": "Hello NestJS"
+  }
+    return: any  ;
+  }
+
